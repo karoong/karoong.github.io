@@ -1,0 +1,134 @@
+﻿  /* 위 간격*/   * {
+    	    	margin:0;
+     		 padding:0;
+    		 }	
+		body {
+			background: #fff;
+			
+		}
+	nav a:link, a:visited {
+			color: #fff;
+		}
+ /* 밑줄*/		a {
+			text-decoration: none;
+		}
+	  h1 {
+			font-size: 1.8em;
+		}
+		h2 {
+			font-size: 1.3em;
+		}
+		p {
+			font-size: 1.3em;
+			line-height: 2.5;
+		}
+		li {
+			font-size: 1em;
+			line-height: 2;
+		}
+		#container {
+			width: 100%;
+			margin: 0 auto;
+		}
+		header {
+			width: 100%;
+			height: 500px;
+			background: url(../images/1.jpg) center no-repeat;
+			background-size: cover;
+			margin: 0;
+		}
+		nav {
+			height: 50px;
+			background: #000;
+		}
+/*상단 바*/		#main-nav {
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+			text-align:center;
+		}
+		#main-nav li {
+			display: inline-block;		
+			color: #fff;
+			font-family: "맑은 고딕", 돋움;
+			font-size: 0.9em;
+			margin: 5px 15px;
+		}		
+
+		#container section:nth-child(odd) {
+			background: #eee;
+		}
+		.page-title {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			padding: 30px; 30px;
+		}
+		.page-title h1 {
+				margin-bottom: 30px;
+			}
+	
+		}
+		.sub-titles {
+			color: #0094ff;
+			font-weight: 600;
+		}		
+		
+		}
+		footer {
+			position: relative;
+			width: 100%;
+			height: 100px;
+		
+		}		
+     #container {
+				width: 950px;
+				margin: 0 auto;
+				border: 1px solid #ccc;
+			}
+
+      #intro, #map, #choice {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        clear: both;
+        position: relative;
+        width: 100%;
+        height: 420px;
+        padding: 15px 2% 10px 5%;
+      }
+      .content {
+				margin: 80px auto 10px;
+				width: 90%;
+				padding: 20px;
+			}
+      .photo {
+				width: 42%;
+				display: block;
+			}
+      .photo > img {
+				width: 100%;
+				
+				height: 250px;
+				margin-bottom: 50px;
+			}
+      .text {
+				width: 42%;
+			}
+      #intro .photo, #map .photo {
+				float: left;
+	/*사진 글자 간격*/		margin-right: 10%;
+			}
+			#intro .text, #map .text {
+				float: left;
+			}
+			#choice .photo {
+				float: right;
+			}
+			#choice .text {
+				float: left;
+			}
+			footer {
+				clear: both;
+			}
+    }
