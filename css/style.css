@@ -1,21 +1,17 @@
-﻿		@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-		@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
-
-  	* {
-    	margin:0;
-      padding:0;
-     }
+﻿  /* 위 간격*/   * {
+    	    	margin:0;
+     		 padding:0;
+    		 }	
 		body {
-	 /*배경색*/		background: #fff;
-			font-family: "Jeju Gothic", serif;
+			background: #fff;
+			
 		}
-		a {
-	 /*밑줄제거*/		text-decoration: none;
-		}
-	 /*메뉴 색상*/	nav a:link, a:visited { 
+	nav a:link, a:visited {
 			color: #fff;
 		}
-		
+ /* 밑줄*/		a {
+			text-decoration: none;
+		}
 	  h1 {
 			font-size: 1.8em;
 		}
@@ -30,45 +26,66 @@
 			font-size: 1em;
 			line-height: 2;
 		}
-
-		 @media screen and (min-width:992px) {
-   /*가운데 여백 */  #container {
-				width: 1000px;
-				margin: 0 auto;
-				border: 1px solid #ccc;
-			}
-	header {
+		#container {
+			width: 100%;
+			margin: 0 auto;
+		}
+		header {
 			width: 100%;
 			height: 500px;
 			background: url(../images/1.jpg) center no-repeat;
 			background-size: cover;
 			margin: 0;
-			}
-nav {
-			height: 100px;
-	/*메뉴 색깔 */	background: #000;
 		}
-	/*글자 여백 */	#main-nav {
+		nav {
+			height: 50px;
+			background: #000;
+		}
+/*상단 바*/		#main-nav {
 			list-style: none;
 			margin: 0;
 			padding: 10px;
 			text-align:center;
 		}
-	 /*메뉴 글자 */	#main-nav li {
+		#main-nav li {
 			display: inline-block;		
 			color: #fff;
 			font-family: "맑은 고딕", 돋움;
-			font-size: 2.0em;
+			font-size: 0.9em;
 			margin: 5px 15px;
 		}		
- /*글자 여백 */		section {
-			position: relative;
-			width: 100%;
-			padding: 15px 5% 10px 5%;
-		}
+
 		#container section:nth-child(odd) {
 			background: #eee;
 		}
+		.page-title {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			padding: 30px; 30px;
+		}
+		.page-title h1 {
+				margin-bottom: 30px;
+			}
+	
+		}
+		.sub-titles {
+			color: #0094ff;
+			font-weight: 600;
+		}		
+		
+		}
+		footer {
+			position: relative;
+			width: 100%;
+			height: 100px;
+		
+		}		
+     #container {
+				width: 950px;
+				margin: 0 auto;
+				border: 1px solid #ccc;
+			}
 
       #intro, #map, #choice {
         -moz-box-sizing: border-box;
@@ -77,7 +94,7 @@ nav {
         clear: both;
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 420px;
         padding: 15px 2% 10px 5%;
       }
       .content {
@@ -91,23 +108,22 @@ nav {
 			}
       .photo > img {
 				width: 100%;
-				max-width: 300px;
-				height: 100%;
-				margin-bottom: 30px;				
+				
+				height: 250px;
+				margin-bottom: 50px;
 			}
       .text {
 				width: 42%;
 			}
-      #intro .photo, #night .photo #map .photo {
+      #intro .photo, #map .photo {
 				float: left;
-				margin-right: 5%;
+	/*사진 글자 간격*/		margin-right: 10%;
 			}
 			#intro .text, #map .text {
 				float: left;
 			}
 			#choice .photo {
 				float: right;
-				margin-right: 5%;
 			}
 			#choice .text {
 				float: left;
