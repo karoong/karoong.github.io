@@ -68,12 +68,13 @@
 		}
 		.page-title {
 			position: absolute;
-			top: 20px;
+			top: 5px;
 			left: 0;
 			padding: 30px; 30px;
 		}
 		.page-title h1 {
-				margin-bottom: 30px;
+				margin-bottom: 20px;
+		
 			}
 	
 		}
